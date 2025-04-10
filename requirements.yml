@@ -1,0 +1,43 @@
+name: test_devops
+channels:
+  - conda-forge
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - asgiref=3.8.1=pyhd8ed1ab_0
+  - backports=1.0=pyhd8ed1ab_4
+  - backports.zoneinfo=0.2.1=py38h497a2fe_4
+  - ca-certificates=2025.2.25=h06a4308_0
+  - colorama=0.4.6=pyhd8ed1ab_0
+  - django=4.2.16=pyhd8ed1ab_0
+  - exceptiongroup=1.2.2=pyhd8ed1ab_0
+  - iniconfig=2.0.0=pyhd8ed1ab_0
+  - ld_impl_linux-64=2.40=h12ee557_0
+  - libffi=3.4.4=h6a678d5_1
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - ncurses=6.4=h6a678d5_0
+  - openssl=3.0.16=h5eee18b_0
+  - packaging=24.2=pyhd8ed1ab_2
+  - pip=24.2=py38h06a4308_0
+  - pluggy=1.5.0=pyhd8ed1ab_0
+  - pytest=8.3.4=pyhd8ed1ab_0
+  - pytest-django=4.9.0=pyhd8ed1ab_0
+  - python=3.8.20=he870216_0
+  - python_abi=3.8=2_cp38
+  - readline=8.2=h5eee18b_0
+  - setuptools=75.1.0=py38h06a4308_0
+  - sqlite=3.45.3=h5eee18b_0
+  - sqlparse=0.5.1=pyhd8ed1ab_0
+  - tk=8.6.14=h39e8969_0
+  - tomli=2.0.2=pyhd8ed1ab_0
+  - typing_extensions=4.12.2=pyha770c72_0
+  - tzdata=2025b=h78e105d_0
+  - wheel=0.44.0=py38h06a4308_0
+  - xz=5.6.4=h5eee18b_1
+  - zlib=1.2.13=h5eee18b_1
+prefix: /home/ivan/miniconda3/envs/test_devops
