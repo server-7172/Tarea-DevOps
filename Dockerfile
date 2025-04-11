@@ -9,7 +9,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.yml /app/
+COPY requirements.txt /app/
 
 # Install dependencies
 RUN apt-get update \
