@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  django-app:
+    image: django-app:latest
+    container_name: devops-container
+    environment:
+      - DEBUG=True
+      - SECRET_KEY=${SECRET_KEY}
+    ports:
+      - "3005:3005"
+    command: python manage.py runserver 0.0.0.0:3005
