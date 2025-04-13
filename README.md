@@ -7,6 +7,8 @@ Usé el flujo de git flow. A través de "features" se crean y aceptan PR hacia l
 Para ver los cambios en el contenedor se debe forzar un rebuild de la imagen para evitar que utilice la anterior (como docker compose up --build) o montar un volumen con el código de la aplicación.
 
 SECRET_KEY no se ha expuesto en el código pero si en uno de los workflow runs de Github Actions (lo que aparece en el commit del primer workflow run)
+
+También hay que borrar las imágenes creadas en sucesivos builds. Se puede hacer con un script bash.
 ```
 
 ### Instalaciones necesarias después de instalar conda (para la creación de un ambiente python local)
