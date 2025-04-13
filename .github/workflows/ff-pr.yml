@@ -1,0 +1,21 @@
+name: Fast Forward PR
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  fast-forward:
+    if: github.event.comment.body == '/ff'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Fast Forward PR
+        id: ff
+        uses: github/fast-forward-pr@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          sucess_message: 'Código propagado correctamente'
+          fail_message: 'No se pudo propagar el código'
