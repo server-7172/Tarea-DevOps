@@ -17,5 +17,5 @@ jobs:
         uses: endre-spotlab/fast-forward-js-action@2.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          sucess_message: 'Código propagado correctamente'
+          success_message: 'Código propagado correctamente'
           fail_message: 'No se pudo propagar el código'
