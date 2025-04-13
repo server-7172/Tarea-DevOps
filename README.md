@@ -22,3 +22,14 @@ conda install -c conda-forge Django pytest-django
 Las variables SECRET_KEY y DEBUG deben ser definidas en el entorno de ejecución
 También hay que borrar las imágenes creadas en sucesivos builds. Se puede hacer con un script bash.
 ```
+
+### Tests
+```
+Ejemplo: https://github.com/server-7172/Tarea-DevOps/actions/runs/14433185508
+```
+
+### PR correcto e incorrecto
+```
+correcto: https://github.com/server-7172/Tarea-DevOps/pull/6
+incorrecto: https://github.com/server-7172/Tarea-DevOps/pull/7
+```
