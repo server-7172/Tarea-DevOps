@@ -14,7 +14,7 @@ jobs:
 
       - name: Fast Forward PR
         id: ff
-        uses: github/fast-forward-pr@v2
+        uses: endre-spotlab/fast-forward-js-action@2.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           sucess_message: 'Código propagado correctamente'
