@@ -10,7 +10,7 @@ SECRET_KEY no se ha expuesto en el código pero si en uno de los workflow runs d
 
 ```
 
-### Instalaciones necesarias después de instalar conda (para la creación de un entorno python local)
+### Instalaciones necesarias después de instalar conda (para la creación de un ambiente python local)
 ```
 conda create -n test_devops python=3.8 --no-default-packages
 conda activate test_devops
