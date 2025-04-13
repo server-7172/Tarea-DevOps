@@ -9,4 +9,9 @@ services:
       - SECRET_KEY=${SECRET_KEY}
     ports:
       - "3005:3005"
-    command: python manage.py runserver 0.0.0.0:3005
+    command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:3005"
+    volumes:
+      - db_data:/db.sqlite3
+
+volumes:
+  db_data:
