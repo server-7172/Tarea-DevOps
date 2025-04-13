@@ -8,6 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    environment: development
 
     steps:
     - name: Checkout code
@@ -19,7 +20,6 @@ jobs:
         python-version: '3.8'
 
     - name: Add environment variables
-      environment: development
       run: |
         echo "SECRET_KEY=${{ secrets.SECRET_KEY }}" >> $GITHUB_ENV
         echo "DEBUG=$DEBUG" >> $GITHUB_ENV
