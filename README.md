@@ -7,6 +7,8 @@ Para ver los cambios en el contenedor se debe forzar un rebuild de la imagen par
 
 SECRET_KEY no se ha expuesto en el código pero si en uno de los workflow runs de Github Actions (lo que aparece en el commit del primer workflow run)
 
+El SECRET_KEY y DEBUG son un secret del repositorio y una variable del entorno "development", respectivamente
+
 ### Instalaciones necesarias después de instalar conda
 ```
 conda create -n test_devops python=3.8 --no-default-packages
